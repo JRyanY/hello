@@ -3,6 +3,7 @@ package com.ryan.hello.interceptor;
 import com.ryan.hello.mapper.UserMapper;
 import com.ryan.hello.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -10,6 +11,7 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+@Service
 public class SessionInterceptor implements HandlerInterceptor {
 
     @Autowired

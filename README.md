@@ -21,3 +21,6 @@ create TABLE user(
 );
 
 '''
+'''
+mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
+'''

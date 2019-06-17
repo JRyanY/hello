@@ -21,6 +21,10 @@ create TABLE user(
 );
 
 '''
+
 '''
+
+
+mvn flyway:migrate
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate
 '''

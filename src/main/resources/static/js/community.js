@@ -69,21 +69,15 @@ function collapseComments(e) {
     } else {
         $.getJSON("/comment/" + id, function (data) {
             console.log(data);
-
-            var commentBody = $("comment-body-" + id);
-            var items = [];
-            $.each(data.data, function (comment) {
+            var subCommentContainer = $("#comment-"+id);
+            $.each(data.data, function (index,comment) {
                 var c = $("<div/>", {
                     "class": "col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse comments",
                     html: comment.content
                 });
-                items.push(c);
+                subCommentContainer.prepend(c);
             });
-            commentBody.append($("<div/>", {
-                "class": "col-lg-12 col-md-12 col-sm-12 col-xs-12 collapse sub-comments",
-                "id": "comment-" + id,
-                html: items.join("")
-            }))
+
 
 
             //展开二级评论

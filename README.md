@@ -25,5 +25,7 @@
 [Postman](https://chrome.google.com/webstore/detail/coohjcphdfgbiolnekdpbcijmhambjff)
 
 
+```
+```bash
 mvn flyway:migrate
 mvn -Dmybatis.generator.overwrite=true mybatis-generator:generate

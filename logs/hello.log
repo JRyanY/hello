@@ -1,0 +1,4 @@
+2019-07-15 12:33:12.343  INFO 9272 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-15 12:33:12.554  INFO 9272 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-15 12:33:12.635  INFO 9272 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-15 12:33:12.640  INFO 9272 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 4.781 seconds (JVM running for 5.84)

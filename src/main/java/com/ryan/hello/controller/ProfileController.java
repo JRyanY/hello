@@ -1,7 +1,6 @@
 package com.ryan.hello.controller;
 
 import com.ryan.hello.dto.PaginationDTO;
-import com.ryan.hello.model.Notification;
 import com.ryan.hello.model.User;
 import com.ryan.hello.service.NotificationService;
 import com.ryan.hello.service.QuestionService;
@@ -12,9 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
-import java.util.List;
 
 @Controller
 public class ProfileController {
@@ -43,10 +40,10 @@ public class ProfileController {
             PaginationDTO paginationDTO = questionService.list(user.getId(), page, size);
             model.addAttribute("pagination", paginationDTO);
         } else if ("replies".equals(action)) {
-            PaginationDTO paginationDTO = notificationService.list(user.getId(),page,size);
-           Long unreadCount = notificationService.unreadCount(user.getId());
+            PaginationDTO paginationDTO = notificationService.list(user.getId(), page, size);
+            Long unreadCount = notificationService.unreadCount(user.getId());
             model.addAttribute("section", "replies");
-            model.addAttribute("pagination",paginationDTO);
+            model.addAttribute("pagination", paginationDTO);
             model.addAttribute("sectionName", "最新回复");
         }
 

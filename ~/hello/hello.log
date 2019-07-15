@@ -1,0 +1,23 @@
+2019-07-15 12:20:32.016  INFO 3584 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on SC-201810271814 with PID 3584 (E:\IdeaDemo\target\classes started by Administrator in E:\IdeaDemo)
+2019-07-15 12:20:32.021  INFO 3584 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-07-15 12:20:32.148  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-07-15 12:20:32.148  INFO 3584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-07-15 12:20:33.925  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-07-15 12:20:33.955  INFO 3584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-07-15 12:20:33.956  INFO 3584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-07-15 12:20:34.101  INFO 3584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-07-15 12:20:34.101  INFO 3584 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1952 ms
+2019-07-15 12:20:34.858  INFO 3584 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-07-15 12:20:35.024  WARN 3584 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-07-15 12:20:35.059  INFO 3584 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-07-15 12:20:35.154  INFO 3584 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-07-15 12:20:35.164  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-07-15 12:20:35.418  INFO 3584 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-07-15 12:20:35.424  INFO 3584 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-07-15 12:20:35.458  WARN 3584 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-07-15 12:20:35.522  INFO 3584 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 11 migrations (execution time 00:00.030s)
+2019-07-15 12:20:35.540  INFO 3584 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 11
+2019-07-15 12:20:35.541  INFO 3584 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-07-15 12:20:35.762  INFO 3584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-07-15 12:20:35.849  INFO 3584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-07-15 12:20:35.852  INFO 3584 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 4.64 seconds (JVM running for 5.862)

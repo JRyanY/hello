@@ -145,3 +145,19 @@ body {
     padding:10px 35%;
     color: #666;
 }
+
+
+
+
+#show{
+
+
+    font: bold 100px/1.5 '微软雅黑';
+    color: #000;
+    font-size:23px;
+    text-shadow:0 -3px 2px #ff3,
+    1px -5px 3px #fd3,
+    -1px -6px 5px #f80,
+    1px -9px 9px #f20;
+}
+

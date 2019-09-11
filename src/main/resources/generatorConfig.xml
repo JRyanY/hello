@@ -6,9 +6,9 @@
 <generatorConfiguration>
 
     <context id="DB2Tables" targetRuntime="MyBatis3">
-        
+
         <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
-        
+
         <jdbcConnection driverClass="org.h2.Driver"
                         connectionURL="jdbc:h2:~/hello"
                         userId="sa"
@@ -40,5 +40,8 @@
 
         <table tableName="notification" delimitAllColumns="Notification"></table>
 
+        <table tableName="nav" delimitAllColumns="Nav"></table>
+
+        <table tableName="ad" delimitAllColumns="Ad"></table>
     </context>
 </generatorConfiguration>

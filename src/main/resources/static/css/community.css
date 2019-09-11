@@ -8,6 +8,26 @@ body {
     margin: 30px;
 }
 
+.community-tag:hover {
+    background-color: #339dff;
+    color: #fff !important;
+    text-decoration-line: none;
+}
+
+.community-tag {
+    text-decoration-line: none;
+    cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    line-height: 16px;
+    padding: 2px 5px;
+    background-color: #99cfff;
+    font-size: 12px;
+    color: #fff !important;
+    border-radius: 4px;
+    margin: 4px;
+}
+
 .btn-publish {
     float: right;
     margin-bottom: 15px;
@@ -142,22 +162,11 @@ body {
 }
 
 .footer {
-    padding:10px 35%;
+    padding: 10px 35%;
     color: #666;
 }
 
 
-
-
-#show{
-
-
-    font: bold 100px/1.5 '微软雅黑';
-    color: #000;
-    font-size:23px;
-    text-shadow:0 -3px 2px #ff3,
-    1px -5px 3px #fd3,
-    -1px -6px 5px #f80,
-    1px -9px 9px #f20;
+.red {
+    color: red !important;
 }
-

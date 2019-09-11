@@ -45,7 +45,7 @@ CodeMirror.defineMode("apl", function() {
     "≡": ["depth", "match"],
     "≢": [null, "notMatch"],
     "∈": ["enlist", "membership"],
-    "⍷": [null, "find"],
+    "⍷": [null, "static.images.icon.find"],
     "∪": ["unique", "union"],
     "∩": [null, "intersection"],
     "∼": ["not", "without"],

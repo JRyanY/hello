@@ -54,7 +54,7 @@ CodeMirror.defineMode("lua", function(config, parserConfig) {
     "package.cpath","package.loaded","package.loaders","package.loadlib","package.path","package.preload",
     "package.seeall",
 
-    "string.byte","string.char","string.dump","string.find","string.format","string.gmatch","string.gsub",
+    "string.byte","string.char","string.dump","static.images.icon.find","string.format","string.gmatch","string.gsub",
     "string.len","string.lower","string.match","string.rep","string.reverse","string.sub","string.upper",
 
     "table.concat","table.insert","table.maxn","table.remove","table.sort"

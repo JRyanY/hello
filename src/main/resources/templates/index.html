@@ -7,28 +7,47 @@
     <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
     <link rel="stylesheet" href="/css/community.css">
 
+
     <script src="/js/jquery-3.3.1.min.js"></script>
     <script src="/js/community.js"></script>
     <script src="/js/bootstrap.min.js"></script>
+    <script type="application/javascript">
+        window.onload = function () {
+            var closable = window.localStorage.getItem("closable");
+            if (closable == "true") {
+                window.close();
+                window.localStorage.removeItem("closable");
+            }
+        }
+    </script>
+
 
 </head>
-<script type="application/javascript">
-    window.onload = function () {
-        var closable = window.localStorage.getItem("closable");
-        if (closable = "true") {
-            window.close();
-            window.localStorage.removeItem("closable");
-        }
-    }
-</script>
+
 <body>
 <div th:insert="navigation::nav"></div>
 
 <div class="container-fluid main">
     <div class="row">
         <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
-            <h2><span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>发现</h2>
-            <hr>
+                    <span><h3>
+                        <img src="images/icon/find.svg" alt="" width="35" height="35">
+                        发现</h3></span>
+            <ul class="nav nav-tabs">
+                <li role="presentation" th:class="${sort=='new'||sort==''? 'active':''}">
+                    <a th:href="@{/(sort='new')}">最新</a>
+                </li>
+                <li role="presentation" th:class="${sort=='hot30'?'active':''}">
+                    <a th:href="@{/(sort='hot30')}">30天最热</a>
+                </li>
+                <li role="presentation" th:class="${sort=='hot'?'active':''}">
+                    <a th:href="@{/(sort='hot')}">最热</a>
+                </li>
+                <li role="presentation" th:class="${sort=='no'?'active':''}">
+                    <a th:href="@{/(sort='no')}" class="red">消灭零回复</a>
+                </li>
+            </ul>
+
             <div class="media" th:each="question : ${pagination.data}">
                 <div class="media-left">
                     <a href="#">
@@ -52,29 +71,31 @@
             <nav aria-label="Page navigation">
                 <ul class="pagination">
                     <li th:if="${pagination.showFirstPage}">
-                        <a th:href="@{/(page=1,search=${search},tag=${tag})}" aria-label="Previous">
+                        <a th:href="@{/(page=1,search=${search},tag=${tag},sort=${sort})}" aria-label="Previous">
                             <span aria-hidden="true">&lt;&lt;</span>
                         </a>
                     </li>
                     <li th:if="${pagination.showPrevious}">
-                        <a th:href="@{/(page=${(pagination.page)-1},search=${search},tag=${tag})}" aria-label="Previous">
+                        <a th:href="@{/(page=${(pagination.page)-1},search=${search},tag=${tag},sort=${sort})}"
+                           aria-label="Previous">
                             <span aria-hidden="true">&lt;</span>
                         </a>
                     </li>
 
 
-                    <li th:class="${pagination.page==page}?'active':''" th:each="page : ${pagination.pages}"><a
-                            th:href="@{/(page=${page})}" th:text="${page}">
-
-                    </a>
+                    <li th:each="page : ${pagination.pages}" th:class="${pagination.page == page}? 'active' : ''">
+                        <a th:href="@{/(page=${page},search=${search},tag=${tag},sort=${sort})}" th:text="${page}"></a>
+                    </li>
                     </li>
                     <li th:if="${pagination.showNext}">
-                        <a th:href="@{/(page=${pagination.page+1},search=${search},tag=${tag})}" aria-label="Previous">
+                        <a th:href="@{/(page=${pagination.page+1},search=${search},tag=${tag},sort=${sort})}"
+                           aria-label="Previous">
                             <span aria-hidden="true">&gt;</span>
                         </a>
                     </li>
                     <li th:if="${pagination.showEndPage}">
-                        <a th:href="@{/(page=${pagination.totalPage},search=${search},tag=${tag})}" aria-label="Previous">
+                        <a th:href="@{/(page=${pagination.totalPage},search=${search},tag=${tag},sort=${sort})}"
+                           aria-label="Previous">
                             <span aria-hidden="true">&gt;&gt;</span>
                         </a>
                     </li>
@@ -104,8 +125,9 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <h4>热门标签</h4>
                     <ul class="question-related">
-                        <li th:each="tag:${tags}">
-                            <a th:href="@{/(page=1,search=${search},tag=${tag})}" th:text="${tag}"></a>
+
+                        <a th:each="tag : ${tags}" th:href="@{/(page=1,search=${search},tag=${tag},sort=${sort})}"
+                           th:text="${tag}" class="community-tag"></a>
                         </li>
                     </ul>
                 </div>

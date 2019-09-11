@@ -2749,7 +2749,7 @@
             
             if (!settings.readOnly)
             {
-                this.cm.execCommand(command || "find");
+                this.cm.execCommand(command || "static.images.icon.find");
             }
             
             return this;

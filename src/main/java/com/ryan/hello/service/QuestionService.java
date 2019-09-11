@@ -3,6 +3,7 @@ package com.ryan.hello.service;
 import com.ryan.hello.dto.PaginationDTO;
 import com.ryan.hello.dto.QuestionDTO;
 import com.ryan.hello.dto.QuestionQueryDTO;
+import com.ryan.hello.enums.SortEnum;
 import com.ryan.hello.exception.CustomizeErrorCode;
 import com.ryan.hello.exception.CustomizeException;
 import com.ryan.hello.mapper.QuestionExtMapper;
@@ -34,19 +35,39 @@ public class QuestionService {
     @Autowired
     private UserMapper userMapper;
 
-    public PaginationDTO list(String search, String tag, Integer page, Integer size) {
+
+    public PaginationDTO list(String search, String tag, String sort, Integer page, Integer size) {
 
 
         if (StringUtils.isNotBlank(search)) {
             String[] tags = StringUtils.split(search, " ");
-            search = Arrays.stream(tags).collect(Collectors.joining("|"));
+            search = Arrays.stream(tags).filter(StringUtils::isNoneBlank)
+                    .map(t -> t.replace("+", "").replace("*", "").replace("?", ""))
+                    .filter(StringUtils::isNoneBlank)
+                    .collect(Collectors.joining("|"));
         }
-
-        PaginationDTO<QuestionDTO> paginationDTO = new PaginationDTO<>();
+        PaginationDTO paginationDTO = new PaginationDTO();
         Integer totalPage;
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
-        questionQueryDTO.setTag(tag);
+
+        if (StringUtils.isNoneBlank(search)) {
+            tag = tag.replace("+", "").replace("*", "").replace("?", "");
+            questionQueryDTO.setTag(tag);
+        }
+
+        for (SortEnum sortEnum : SortEnum.values()) {
+            if (sortEnum.name().toLowerCase().equals(sort)) {
+                questionQueryDTO.setSort(sort);
+                if (sortEnum == SortEnum.HOT7) {
+                    questionQueryDTO.setTime(System.currentTimeMillis() - 1000L * 60 * 60 * 24 * 7);
+                }
+                if (sortEnum == SortEnum.HOT30) {
+                    questionQueryDTO.setTime(System.currentTimeMillis() - 1000L * 60 * 60 * 24 * 30);
+                }
+                break;
+            }
+        }
 
 
         Integer totalCount = questionExtMapper.countBySearch(questionQueryDTO);
@@ -55,7 +76,6 @@ public class QuestionService {
         } else {
             totalPage = totalCount / size + 1;
         }
-
         if (page < 1) {
             page = 1;
         }
@@ -79,6 +99,7 @@ public class QuestionService {
             questionDTO.setUser(user);
             questionDTOList.add(questionDTO);
         }
+
         paginationDTO.setData(questionDTOList);
 
         return paginationDTO;
@@ -149,6 +170,15 @@ public class QuestionService {
 
         } else {
             //更新
+            Question dbQuestion=questionMapper.selectByPrimaryKey(question.getId());
+            if(dbQuestion==null){
+                throw  new CustomizeException(CustomizeErrorCode.QUESTION_NOT_FOUND);
+            }
+            if(dbQuestion.getCreator().longValue()!=question.getCreator().longValue()){
+                throw new CustomizeException(CustomizeErrorCode.INVALID_OPERATION);
+            }
+
+
             Question updateQuestion = new Question();
             updateQuestion.setGmtModified(System.currentTimeMillis());
             updateQuestion.setTitle(question.getTitle());
@@ -176,7 +206,12 @@ public class QuestionService {
             return new ArrayList<>();
         }
         String[] tags = StringUtils.split(queryDTO.getTag(), ",");
-        String regexpTage = Arrays.stream(tags).collect(Collectors.joining("|"));
+        String regexpTage =
+                Arrays.stream(tags)
+                        .filter(StringUtils::isNoneBlank)
+                        .map(t -> t.replace("+", "").replace("*", "").replace("?", ""))
+                        .filter(StringUtils::isNoneBlank)
+                        .collect(Collectors.joining("|"));
         Question question = new Question();
         question.setId(queryDTO.getId());
         question.setTag(regexpTage);
@@ -187,7 +222,6 @@ public class QuestionService {
             BeanUtils.copyProperties(q, questionDTO);
             return questionDTO;
         }).collect(Collectors.toList());
-
         return questionDTOS;
     }
 }

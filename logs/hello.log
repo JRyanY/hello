@@ -1,441 +1,495 @@
-2019-09-11 14:53:06.458  INFO 13428 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 13428 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 14:53:06.468  INFO 13428 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 14:53:06.698  INFO 13428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 14:53:06.698  INFO 13428 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 14:53:10.228  INFO 13428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 14:53:10.248  INFO 13428 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 14:53:10.248  INFO 13428 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 14:53:10.378  INFO 13428 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 14:53:10.378  INFO 13428 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3680 ms
-2019-09-11 14:53:11.528  INFO 13428 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 14:53:11.678  WARN 13428 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 14:53:11.758  INFO 13428 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 14:53:12.058  INFO 13428 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 14:53:12.068  INFO 13428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 14:53:12.348  INFO 13428 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 14:53:12.348  INFO 13428 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 14:53:12.378  WARN 13428 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 14:53:12.468  INFO 13428 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.026s)
-2019-09-11 14:53:12.478  INFO 13428 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 14:53:12.488  INFO 13428 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 14:53:12.538  INFO 13428 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 14:53:12.848  INFO 13428 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 14:53:12.898  INFO 13428 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 14:53:12 CST 2019
-2019-09-11 14:53:13.138  INFO 13428 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 14:53:13.138  INFO 13428 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 7.5 seconds (JVM running for 10.732)
-2019-09-11 14:53:13.158  INFO 13428 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 14:53:13 CST 2019
-2019-09-11 14:53:21.678  INFO 13428 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 14:53:21.678  INFO 13428 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 14:53:21.691  INFO 13428 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2019-09-11 15:18:52.630  INFO 14956 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 14956 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 15:18:52.632  INFO 14956 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 15:18:52.670  INFO 14956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 15:18:52.670  INFO 14956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 15:18:53.647  INFO 14956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 15:18:53.665  INFO 14956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 15:18:53.665  INFO 14956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 15:18:53.765  INFO 14956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 15:18:53.765  INFO 14956 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1095 ms
-2019-09-11 15:18:54.250  INFO 14956 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 15:18:54.320  WARN 14956 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 15:18:54.340  INFO 14956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 15:18:54.393  INFO 14956 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 15:18:54.395  INFO 14956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 15:18:54.486  INFO 14956 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 15:18:54.489  INFO 14956 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 15:18:54.506  WARN 14956 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 15:18:54.551  INFO 14956 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.020s)
-2019-09-11 15:18:54.562  INFO 14956 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 15:18:54.563  INFO 14956 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 15:18:54.588  INFO 14956 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 15:18:54.686  INFO 14956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 15:18:54.713  INFO 14956 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 15:18:54 CST 2019
-2019-09-11 15:18:54.742  INFO 14956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 15:18:54.745  INFO 14956 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.438 seconds (JVM running for 3.097)
-2019-09-11 15:18:54.751  INFO 14956 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 15:18:54 CST 2019
-2019-09-11 15:18:58.897  INFO 14956 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 15:18:58.897  INFO 14956 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 15:18:58.904  INFO 14956 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-09-11 16:07:27.116  INFO 15044 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 15044 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:07:27.118  INFO 15044 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:07:27.154  INFO 15044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:07:27.154  INFO 15044 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:07:28.056  INFO 15044 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:07:28.080  INFO 15044 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:07:28.081  INFO 15044 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:07:28.176  INFO 15044 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:07:28.177  INFO 15044 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1023 ms
-2019-09-11 16:07:28.544  WARN 15044 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'indexController': Unsatisfied dependency expressed through field 'questionService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'questionService': Unsatisfied dependency expressed through field 'questionQueryDTO'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.ryan.hello.dto.QuestionQueryDTO' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-2019-09-11 16:07:28.546  INFO 15044 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-09-11 16:07:28.570  INFO 15044 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+2019-09-12 11:24:11.429  INFO 12124 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 12124 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 11:24:11.439  INFO 12124 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 11:24:12.099  INFO 12124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 11:24:12.099  INFO 12124 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 11:24:15.189  INFO 12124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 11:24:15.209  INFO 12124 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 11:24:15.209  INFO 12124 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 11:24:15.379  INFO 12124 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 11:24:15.379  INFO 12124 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3280 ms
+2019-09-12 11:24:16.499  INFO 12124 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 11:24:16.599  WARN 12124 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 11:24:16.629  INFO 12124 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 11:24:16.719  INFO 12124 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 11:24:16.729  INFO 12124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 11:24:17.109  INFO 12124 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 11:24:17.109  INFO 12124 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 11:24:17.139  WARN 12124 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 11:24:17.259  INFO 12124 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.031s)
+2019-09-12 11:24:17.269  INFO 12124 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 11:24:17.269  INFO 12124 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 11:24:17.319  INFO 12124 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 11:24:17.669  INFO 12124 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 11:24:17.709  INFO 12124 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 11:24:17 CST 2019
+2019-09-12 11:24:17.829  INFO 12124 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 11:24:17.829  INFO 12124 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 7.991 seconds (JVM running for 10.98)
+2019-09-12 11:24:17.849  INFO 12124 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 11:24:17 CST 2019
+2019-09-12 11:24:47.805  INFO 12124 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 11:24:47.805  INFO 12124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 11:24:47.823  INFO 12124 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2019-09-12 11:49:03.121  INFO 13300 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 13300 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 11:49:03.124  INFO 13300 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 11:49:03.177  INFO 13300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 11:49:03.177  INFO 13300 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 11:49:04.141  INFO 13300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 11:49:04.156  INFO 13300 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 11:49:04.156  INFO 13300 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 11:49:04.255  INFO 13300 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 11:49:04.256  INFO 13300 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1078 ms
+2019-09-12 11:49:04.769  INFO 13300 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 11:49:04.843  WARN 13300 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 11:49:04.862  INFO 13300 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 11:49:04.910  INFO 13300 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 11:49:04.912  INFO 13300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 11:49:05.004  INFO 13300 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 11:49:05.008  INFO 13300 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 11:49:05.027  WARN 13300 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 11:49:05.073  INFO 13300 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.023s)
+2019-09-12 11:49:05.084  INFO 13300 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 11:49:05.086  INFO 13300 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 11:49:05.111  INFO 13300 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 11:49:05.211  INFO 13300 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 11:49:05.237  INFO 13300 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 11:49:05 CST 2019
+2019-09-12 11:49:05.264  INFO 13300 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 11:49:05.267  INFO 13300 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.532 seconds (JVM running for 3.208)
+2019-09-12 11:49:05.279  INFO 13300 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 11:49:05 CST 2019
+2019-09-12 11:49:33.749  INFO 13300 --- [http-nio-8081-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 11:49:33.749  INFO 13300 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 11:49:33.756  INFO 13300 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-09-12 12:22:37.393  INFO 6424 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 6424 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 12:22:37.394  INFO 6424 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 12:22:37.432  INFO 6424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 12:22:37.432  INFO 6424 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 12:22:38.755  INFO 6424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 12:22:38.772  INFO 6424 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 12:22:38.772  INFO 6424 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 12:22:38.876  INFO 6424 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 12:22:38.877  INFO 6424 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1445 ms
+2019-09-12 12:22:39.389  INFO 6424 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 12:22:39.469  WARN 6424 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 12:22:39.490  INFO 6424 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 12:22:39.539  INFO 6424 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 12:22:39.541  INFO 6424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 12:22:39.646  INFO 6424 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 12:22:39.649  INFO 6424 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 12:22:39.669  WARN 6424 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 12:22:39.716  INFO 6424 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.022s)
+2019-09-12 12:22:39.726  INFO 6424 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 12:22:39.728  INFO 6424 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 12:22:39.753  INFO 6424 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 12:22:39.856  INFO 6424 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 12:22:39.882  INFO 6424 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 12:22:39 CST 2019
+2019-09-12 12:22:39.908  INFO 6424 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 12:22:39.911  INFO 6424 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.954 seconds (JVM running for 3.645)
+2019-09-12 12:22:39.922  INFO 6424 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 12:22:39 CST 2019
+2019-09-12 12:22:43.324  INFO 6424 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 12:22:43.324  INFO 6424 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 12:22:43.330  INFO 6424 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-09-12 12:33:30.530  INFO 14440 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 14440 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 12:33:30.533  INFO 14440 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 12:33:30.566  INFO 14440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 12:33:30.566  INFO 14440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 12:33:31.522  INFO 14440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 12:33:31.539  INFO 14440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 12:33:31.539  INFO 14440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 12:33:31.642  INFO 14440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 12:33:31.642  INFO 14440 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1076 ms
+2019-09-12 12:33:32.151  INFO 14440 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 12:33:32.223  WARN 14440 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 12:33:32.242  INFO 14440 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 12:33:32.292  INFO 14440 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 12:33:32.294  INFO 14440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 12:33:32.389  INFO 14440 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 12:33:32.392  INFO 14440 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 12:33:32.410  WARN 14440 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 12:33:32.459  INFO 14440 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.025s)
+2019-09-12 12:33:32.470  INFO 14440 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 12:33:32.472  INFO 14440 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 12:33:32.499  INFO 14440 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 12:33:32.600  INFO 14440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 12:33:32.625  INFO 14440 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 12:33:32 CST 2019
+2019-09-12 12:33:32.651  INFO 14440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 12:33:32.654  INFO 14440 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.594 seconds (JVM running for 3.247)
+2019-09-12 12:33:32.663  INFO 14440 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 12:33:32 CST 2019
+2019-09-12 12:33:35.775  INFO 14440 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 12:33:35.776  INFO 14440 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 12:33:35.782  INFO 14440 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-09-12 12:33:35.888  WARN 14440 --- [http-nio-8081-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'sort != and sort!='' and sort=='new''. Cause: org.apache.ibatis.ognl.ExpressionSyntaxException: Malformed OGNL expression: sort != and sort!='' and sort=='new' [org.apache.ibatis.ognl.ParseException: Encountered " "and" "and "" at line 1, column 9.
+Was expecting one of:
+    ":" ...
+    "not" ...
+    "+" ...
+    "-" ...
+    "~" ...
+    "!" ...
+    "(" ...
+    "true" ...
+    "false" ...
+    "null" ...
+    "#this" ...
+    "#root" ...
+    "#" ...
+    "[" ...
+    "{" ...
+    "@" ...
+    "new" ...
+    <IDENT> ...
+    <DYNAMIC_SUBSCRIPT> ...
+    "\'" ...
+    "`" ...
+    "\"" ...
+    <INT_LITERAL> ...
+    <FLT_LITERAL> ...
+    ]]
+2019-09-12 12:33:37.927  WARN 14440 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.builder.BuilderException: Error evaluating expression 'sort != and sort!='' and sort=='new''. Cause: org.apache.ibatis.ognl.ExpressionSyntaxException: Malformed OGNL expression: sort != and sort!='' and sort=='new' [org.apache.ibatis.ognl.ParseException: Encountered " "and" "and "" at line 1, column 9.
+Was expecting one of:
+    ":" ...
+    "not" ...
+    "+" ...
+    "-" ...
+    "~" ...
+    "!" ...
+    "(" ...
+    "true" ...
+    "false" ...
+    "null" ...
+    "#this" ...
+    "#root" ...
+    "#" ...
+    "[" ...
+    "{" ...
+    "@" ...
+    "new" ...
+    <IDENT> ...
+    <DYNAMIC_SUBSCRIPT> ...
+    "\'" ...
+    "`" ...
+    "\"" ...
+    <INT_LITERAL> ...
+    <FLT_LITERAL> ...
+    ]]
+2019-09-12 12:34:20.281  INFO 13036 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 13036 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 12:34:20.281  INFO 13036 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 12:34:20.321  INFO 13036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 12:34:20.321  INFO 13036 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 12:34:21.321  INFO 13036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 12:34:21.341  INFO 13036 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 12:34:21.341  INFO 13036 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 12:34:21.441  INFO 13036 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 12:34:21.441  INFO 13036 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1120 ms
+2019-09-12 12:34:21.931  INFO 13036 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 12:34:22.001  WARN 13036 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 12:34:22.021  INFO 13036 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 12:34:22.071  INFO 13036 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 12:34:22.071  INFO 13036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 12:34:22.161  INFO 13036 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 12:34:22.161  INFO 13036 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 12:34:22.181  WARN 13036 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 12:34:22.231  INFO 13036 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.023s)
+2019-09-12 12:34:22.241  INFO 13036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 12:34:22.241  INFO 13036 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 12:34:22.271  INFO 13036 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 12:34:22.361  INFO 13036 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 12:34:22.391  INFO 13036 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 12:34:22 CST 2019
+2019-09-12 12:34:22.411  INFO 13036 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 12:34:22.411  INFO 13036 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.47 seconds (JVM running for 3.166)
+2019-09-12 12:34:22.421  INFO 13036 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 12:34:22 CST 2019
+2019-09-12 12:34:56.277  INFO 13036 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 12:34:56.278  INFO 13036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 12:34:56.285  INFO 13036 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2019-09-12 12:34:56.396  WARN 13036 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
 
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2019-09-11 16:07:28.880 ERROR 15044 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+         
 
-***************************
-APPLICATION FAILED TO START
-***************************
+         
 
-Description:
+         
 
-Field questionQueryDTO in com.ryan.hello.service.QuestionService required a bean of type 'com.ryan.hello.dto.QuestionQueryDTO' that could not be found.
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
 
-The injection point has the following annotations:
-	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+         
 
+         
 
-Action:
+         
 
-Consider defining a bean of type 'com.ryan.hello.dto.QuestionQueryDTO' in your configuration.
+        order by gmt_create desc
+        limit ?,? [42000-199]
+### The error may exist in file [D:\commit\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.ryan.hello.mapper.QuestionExtMapper.selectBySearch
+### The error occurred while executing a query
+### SQL: select * from QUESTION                                  order by gmt_create desc                                                     order by gmt_create desc         limit ?,?
+### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
 
-2019-09-11 16:09:06.545  INFO 15636 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 15636 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:09:06.562  INFO 15636 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:09:06.601  INFO 15636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:09:06.601  INFO 15636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:09:07.567  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:09:07.582  INFO 15636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:09:07.582  INFO 15636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:09:07.704  INFO 15636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:09:07.705  INFO 15636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1104 ms
-2019-09-11 16:09:08.162  INFO 15636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:09:08.235  WARN 15636 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:09:08.255  INFO 15636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:09:08.306  INFO 15636 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:09:08.308  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:09:08.405  INFO 15636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:09:08.409  INFO 15636 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:09:08.425  WARN 15636 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:09:08.468  INFO 15636 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.020s)
-2019-09-11 16:09:08.480  INFO 15636 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:09:08.481  INFO 15636 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:09:08.510  INFO 15636 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:09:08.607  INFO 15636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:09:08.631  INFO 15636 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:09:08 CST 2019
-2019-09-11 16:09:08.657  INFO 15636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:09:08.660  INFO 15636 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.538 seconds (JVM running for 3.227)
-2019-09-11 16:09:08.670  INFO 15636 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:09:08 CST 2019
-2019-09-11 16:09:10.812  INFO 15636 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:09:10.812  INFO 15636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:09:10.819  INFO 15636 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-09-11 16:13:26.052  INFO 16508 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 16508 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:13:26.054  INFO 16508 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:13:26.087  INFO 16508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:13:26.087  INFO 16508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:13:27.712  INFO 16508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:13:27.727  INFO 16508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:13:27.727  INFO 16508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:13:27.961  INFO 16508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:13:27.961  INFO 16508 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1873 ms
-2019-09-11 16:13:28.476  INFO 16508 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:13:28.553  WARN 16508 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:13:28.574  INFO 16508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:13:28.630  INFO 16508 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:13:28.633  INFO 16508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:13:28.726  INFO 16508 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:13:28.729  INFO 16508 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:13:28.746  WARN 16508 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:13:28.794  INFO 16508 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.024s)
-2019-09-11 16:13:28.806  INFO 16508 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:13:28.808  INFO 16508 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:13:28.838  INFO 16508 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:13:28.939  INFO 16508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:13:28.962  INFO 16508 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:13:28 CST 2019
-2019-09-11 16:13:28.991  INFO 16508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:13:28.994  INFO 16508 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 3.26 seconds (JVM running for 4.208)
-2019-09-11 16:13:29.003  INFO 16508 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:13:29 CST 2019
-2019-09-11 16:13:44.970  INFO 16508 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:13:44.970  INFO 16508 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:13:44.975  INFO 16508 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
-2019-09-11 16:14:09.832  WARN 16508 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
-2019-09-11 16:16:58.022  INFO 17112 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 17112 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:16:58.022  INFO 17112 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:16:58.052  INFO 17112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:16:58.052  INFO 17112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:16:58.942  INFO 17112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:16:58.952  INFO 17112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:16:58.952  INFO 17112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:16:59.062  INFO 17112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:16:59.062  INFO 17112 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1010 ms
-2019-09-11 16:16:59.502  INFO 17112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:16:59.572  WARN 17112 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:16:59.592  INFO 17112 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:16:59.632  INFO 17112 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:16:59.632  INFO 17112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:16:59.722  INFO 17112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:16:59.732  INFO 17112 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:16:59.742  WARN 17112 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:16:59.792  INFO 17112 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.021s)
-2019-09-11 16:16:59.802  INFO 17112 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:16:59.802  INFO 17112 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:16:59.832  INFO 17112 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:16:59.922  INFO 17112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:16:59.942  INFO 17112 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:16:59 CST 2019
-2019-09-11 16:16:59.972  INFO 17112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:16:59.972  INFO 17112 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.21 seconds (JVM running for 3.298)
-2019-09-11 16:16:59.982  INFO 17112 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:16:59 CST 2019
-2019-09-11 16:17:04.541  INFO 17112 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:17:04.541  INFO 17112 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:17:04.548  INFO 17112 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2019-09-11 16:18:20.173  INFO 16592 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 16592 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:18:20.173  INFO 16592 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:18:20.213  INFO 16592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:18:20.213  INFO 16592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:18:21.183  INFO 16592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:18:21.203  INFO 16592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:18:21.203  INFO 16592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:18:21.293  INFO 16592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:18:21.293  INFO 16592 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1080 ms
-2019-09-11 16:18:21.763  INFO 16592 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:18:21.853  WARN 16592 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:18:21.863  INFO 16592 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:18:21.923  INFO 16592 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:18:21.923  INFO 16592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:18:22.003  INFO 16592 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:18:22.003  INFO 16592 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:18:22.023  WARN 16592 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:18:22.063  INFO 16592 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.022s)
-2019-09-11 16:18:22.083  INFO 16592 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:18:22.083  INFO 16592 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:18:22.113  INFO 16592 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:18:22.223  INFO 16592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:18:22.253  INFO 16592 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:18:22 CST 2019
-2019-09-11 16:18:22.283  INFO 16592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:18:22.283  INFO 16592 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.62 seconds (JVM running for 3.334)
-2019-09-11 16:18:22.293  INFO 16592 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:18:22 CST 2019
-2019-09-11 16:18:25.837  INFO 16592 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:18:25.837  INFO 16592 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:18:25.845  INFO 16592 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-09-11 16:19:01.904  INFO 14764 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 14764 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:19:01.904  INFO 14764 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:19:01.944  INFO 14764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:19:01.944  INFO 14764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:19:02.884  INFO 14764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:19:02.904  INFO 14764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:19:02.904  INFO 14764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:19:03.004  INFO 14764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:19:03.004  INFO 14764 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1060 ms
-2019-09-11 16:19:03.484  INFO 14764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:19:03.564  WARN 14764 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:19:03.584  INFO 14764 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:19:03.624  INFO 14764 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:19:03.634  INFO 14764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:19:03.722  INFO 14764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:19:03.722  INFO 14764 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:19:03.742  WARN 14764 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:19:03.796  INFO 14764 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.022s)
-2019-09-11 16:19:03.807  INFO 14764 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:19:03.808  INFO 14764 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:19:03.834  INFO 14764 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:19:03.934  INFO 14764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:19:03.958  INFO 14764 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:19:03 CST 2019
-2019-09-11 16:19:03.985  INFO 14764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:19:03.987  INFO 14764 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.573 seconds (JVM running for 3.244)
-2019-09-11 16:19:03.992  INFO 14764 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:19:03 CST 2019
-2019-09-11 16:19:06.001  INFO 14764 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:19:06.002  INFO 14764 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:19:06.008  INFO 14764 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2019-09-11 16:22:02.162  INFO 16904 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 16904 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:22:02.164  INFO 16904 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:22:02.213  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:22:02.215  INFO 16904 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:22:03.281  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:22:03.296  INFO 16904 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:22:03.296  INFO 16904 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:22:03.393  INFO 16904 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:22:03.393  INFO 16904 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1178 ms
-2019-09-11 16:22:03.857  INFO 16904 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:22:03.929  WARN 16904 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:22:03.947  INFO 16904 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:22:03.992  INFO 16904 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:22:03.994  INFO 16904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:22:04.078  INFO 16904 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:22:04.081  INFO 16904 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:22:04.098  WARN 16904 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:22:04.144  INFO 16904 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 12 migrations (execution time 00:00.022s)
-2019-09-11 16:22:04.155  INFO 16904 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 12
-2019-09-11 16:22:04.157  INFO 16904 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:22:04.184  INFO 16904 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:22:04.288  INFO 16904 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:22:04.310  INFO 16904 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:22:04 CST 2019
-2019-09-11 16:22:04.334  INFO 16904 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:22:04.336  INFO 16904 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.453 seconds (JVM running for 3.105)
-2019-09-11 16:22:04.343  INFO 16904 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:22:04 CST 2019
-2019-09-11 16:22:14.455  INFO 16904 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:22:14.455  INFO 16904 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:22:14.464  INFO 16904 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2019-09-11 16:43:53.124  INFO 17224 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 17224 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 16:43:53.134  INFO 17224 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 16:43:53.164  INFO 17224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 16:43:53.164  INFO 17224 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 16:43:54.184  INFO 17224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 16:43:54.204  INFO 17224 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 16:43:54.214  INFO 17224 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 16:43:54.304  INFO 17224 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 16:43:54.304  INFO 17224 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1140 ms
-2019-09-11 16:43:54.784  INFO 17224 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 16:43:54.854  WARN 17224 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 16:43:54.874  INFO 17224 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 16:43:54.914  INFO 17224 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 16:43:54.924  INFO 17224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 16:43:55.004  INFO 17224 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 16:43:55.014  INFO 17224 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 16:43:55.034  WARN 17224 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 16:43:55.074  INFO 17224 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 13 migrations (execution time 00:00.022s)
-2019-09-11 16:43:55.094  INFO 17224 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 13
-2019-09-11 16:43:55.094  INFO 17224 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 16:43:55.114  INFO 17224 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 16:43:55.224  INFO 17224 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 16:43:55.244  INFO 17224 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 16:43:55 CST 2019
-2019-09-11 16:43:55.264  INFO 17224 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 16:43:55.264  INFO 17224 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.44 seconds (JVM running for 3.563)
-2019-09-11 16:43:55.274  INFO 17224 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 16:43:55 CST 2019
-2019-09-11 16:43:57.644  INFO 17224 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 16:43:57.645  INFO 17224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 16:43:57.651  INFO 17224 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2019-09-11 17:06:46.114  INFO 15620 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 15620 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 17:06:46.116  INFO 15620 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 17:06:46.229  INFO 15620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 17:06:46.229  INFO 15620 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 17:06:47.374  INFO 15620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 17:06:47.394  INFO 15620 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 17:06:47.394  INFO 15620 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 17:06:47.632  INFO 15620 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 17:06:47.633  INFO 15620 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1404 ms
-2019-09-11 17:06:48.139  INFO 15620 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 17:06:48.214  WARN 15620 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 17:06:48.233  INFO 15620 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 17:06:48.281  INFO 15620 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 17:06:48.283  INFO 15620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 17:06:48.376  INFO 15620 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 17:06:48.380  INFO 15620 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 17:06:48.397  WARN 15620 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 17:06:48.444  INFO 15620 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 13 migrations (execution time 00:00.024s)
-2019-09-11 17:06:48.456  INFO 15620 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 13
-2019-09-11 17:06:48.458  INFO 15620 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 17:06:48.486  INFO 15620 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 17:06:48.601  INFO 15620 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 17:06:48.625  INFO 15620 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 17:06:48 CST 2019
-2019-09-11 17:06:48.652  INFO 15620 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 17:06:48.655  INFO 15620 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 3.164 seconds (JVM running for 3.847)
-2019-09-11 17:06:48.663  INFO 15620 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 17:06:48 CST 2019
-2019-09-11 17:06:52.621  INFO 15620 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 17:06:52.622  INFO 15620 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 17:06:52.628  INFO 15620 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2019-09-11 17:10:52.212  INFO 16784 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 16784 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 17:10:52.214  INFO 16784 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 17:10:52.253  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 17:10:52.253  INFO 16784 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 17:10:53.303  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 17:10:53.319  INFO 16784 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 17:10:53.320  INFO 16784 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 17:10:53.429  INFO 16784 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 17:10:53.430  INFO 16784 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1177 ms
-2019-09-11 17:10:53.916  INFO 16784 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 17:10:53.990  WARN 16784 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 17:10:54.010  INFO 16784 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 17:10:54.056  INFO 16784 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 17:10:54.058  INFO 16784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 17:10:54.148  INFO 16784 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 17:10:54.152  INFO 16784 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 17:10:54.170  WARN 16784 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 17:10:54.215  INFO 16784 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 13 migrations (execution time 00:00.021s)
-2019-09-11 17:10:54.226  INFO 16784 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 13
-2019-09-11 17:10:54.228  INFO 16784 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 17:10:54.252  INFO 16784 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 17:10:54.352  INFO 16784 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 17:10:54.377  INFO 16784 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 17:10:54 CST 2019
-2019-09-11 17:10:54.404  INFO 16784 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 17:10:54.407  INFO 16784 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.593 seconds (JVM running for 3.303)
-2019-09-11 17:10:54.415  INFO 16784 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 17:10:54 CST 2019
-2019-09-11 17:10:57.721  INFO 16784 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 17:10:57.721  INFO 16784 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 17:10:57.727  INFO 16784 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2019-09-11 17:33:38.929  WARN 16784 --- [http-nio-8081-exec-6] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
-2019-09-11 17:34:17.508  WARN 16784 --- [http-nio-8081-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
-2019-09-11 17:36:30.081  INFO 18144 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 18144 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 17:36:30.081  INFO 18144 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 17:36:30.121  INFO 18144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 17:36:30.121  INFO 18144 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 17:36:31.631  INFO 18144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 17:36:31.651  INFO 18144 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 17:36:31.651  INFO 18144 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 17:36:31.751  INFO 18144 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 17:36:31.751  INFO 18144 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1630 ms
-2019-09-11 17:36:32.341  INFO 18144 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 17:36:32.411  WARN 18144 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 17:36:32.431  INFO 18144 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 17:36:32.471  INFO 18144 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 17:36:32.471  INFO 18144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 17:36:32.591  INFO 18144 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 17:36:32.591  INFO 18144 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 17:36:32.611  WARN 18144 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 17:36:32.651  INFO 18144 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 13 migrations (execution time 00:00.022s)
-2019-09-11 17:36:32.661  INFO 18144 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 13
-2019-09-11 17:36:32.671  INFO 18144 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 17:36:32.691  INFO 18144 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 17:36:32.881  INFO 18144 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 17:36:32.901  INFO 18144 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 17:36:32 CST 2019
-2019-09-11 17:36:32.931  INFO 18144 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 17:36:32.931  INFO 18144 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 3.16 seconds (JVM running for 4.12)
-2019-09-11 17:36:32.941  INFO 18144 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 17:36:32 CST 2019
-2019-09-11 17:36:36.269  INFO 18144 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 17:36:36.270  INFO 18144 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 17:36:36.276  INFO 18144 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2019-09-11 18:17:00.324  INFO 17796 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 17796 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 18:17:00.327  INFO 17796 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 18:17:00.361  INFO 17796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 18:17:00.361  INFO 17796 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 18:17:01.677  INFO 17796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 18:17:01.693  INFO 17796 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 18:17:01.694  INFO 17796 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 18:17:01.805  INFO 17796 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 18:17:01.806  INFO 17796 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1445 ms
-2019-09-11 18:17:02.385  INFO 17796 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 18:17:02.462  WARN 17796 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 18:17:02.481  INFO 17796 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 18:17:02.529  INFO 17796 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 18:17:02.531  INFO 17796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 18:17:02.626  INFO 17796 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 18:17:02.629  INFO 17796 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 18:17:02.648  WARN 17796 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 18:17:02.699  INFO 17796 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.025s)
-2019-09-11 18:17:02.711  INFO 17796 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
-2019-09-11 18:17:02.712  INFO 17796 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 18:17:02.738  INFO 17796 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 18:17:02.839  INFO 17796 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 18:17:02.863  INFO 17796 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 18:17:02 CST 2019
-2019-09-11 18:17:02.888  INFO 17796 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 18:17:02.891  INFO 17796 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.952 seconds (JVM running for 3.708)
-2019-09-11 18:17:02.900  INFO 17796 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 18:17:02 CST 2019
-2019-09-11 18:17:06.822  INFO 17796 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 18:17:06.822  INFO 17796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 18:17:06.830  INFO 17796 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2019-09-11 18:19:53.331  INFO 18128 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 18128 (D:\commit\target\classes started by Administrator in D:\commit)
-2019-09-11 18:19:53.334  INFO 18128 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
-2019-09-11 18:19:53.368  INFO 18128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2019-09-11 18:19:53.368  INFO 18128 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2019-09-11 18:19:54.437  INFO 18128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
-2019-09-11 18:19:54.454  INFO 18128 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-09-11 18:19:54.454  INFO 18128 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
-2019-09-11 18:19:54.553  INFO 18128 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-09-11 18:19:54.553  INFO 18128 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1185 ms
-2019-09-11 18:19:55.046  INFO 18128 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
-2019-09-11 18:19:55.125  WARN 18128 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
-2019-09-11 18:19:55.146  INFO 18128 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
-2019-09-11 18:19:55.193  INFO 18128 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
-2019-09-11 18:19:55.195  INFO 18128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-09-11 18:19:55.287  INFO 18128 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-09-11 18:19:55.291  INFO 18128 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
-2019-09-11 18:19:55.315  WARN 18128 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
-2019-09-11 18:19:55.368  INFO 18128 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.024s)
-2019-09-11 18:19:55.380  INFO 18128 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
-2019-09-11 18:19:55.382  INFO 18128 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
-2019-09-11 18:19:55.410  INFO 18128 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
-2019-09-11 18:19:55.517  INFO 18128 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2019-09-11 18:19:55.540  INFO 18128 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Wed Sep 11 18:19:55 CST 2019
-2019-09-11 18:19:55.565  INFO 18128 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
-2019-09-11 18:19:55.568  INFO 18128 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.623 seconds (JVM running for 4.209)
-2019-09-11 18:19:55.574  INFO 18128 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Wed Sep 11 18:19:55 CST 2019
-2019-09-11 18:20:00.422  INFO 18128 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-09-11 18:20:00.422  INFO 18128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-09-11 18:20:00.428  INFO 18128 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]
+; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]]
+2019-09-12 12:34:57.794  WARN 13036 --- [http-nio-8081-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]
+### The error may exist in file [D:\commit\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.ryan.hello.mapper.QuestionExtMapper.selectBySearch
+### The error occurred while executing a query
+### SQL: select * from QUESTION                                  order by gmt_create desc                                                     order by gmt_create desc         limit ?,?
+### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]
+; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]]
+2019-09-12 12:34:58.772  WARN 13036 --- [http-nio-8081-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.jdbc.BadSqlGrammarException: 
+### Error querying database.  Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]
+### The error may exist in file [D:\commit\target\classes\mapper\QuestionExtMapper.xml]
+### The error may involve com.ryan.hello.mapper.QuestionExtMapper.selectBySearch
+### The error occurred while executing a query
+### SQL: select * from QUESTION                                  order by gmt_create desc                                                     order by gmt_create desc         limit ?,?
+### Cause: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]
+; bad SQL grammar []; nested exception is org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM QUESTION
+          
+         
+            ORDER BY GMT_CREATE DESC
+         
+
+         
+
+         
+
+         
+
+        ORDER[*] BY GMT_CREATE DESC
+        LIMIT ?,? "; SQL statement:
+select * from QUESTION
+          
+         
+            order by gmt_create desc
+         
+
+         
+
+         
+
+         
+
+        order by gmt_create desc
+        limit ?,? [42000-199]]
+2019-09-12 12:35:48.425  INFO 13304 --- [restartedMain] com.ryan.hello.HelloApplication          : Starting HelloApplication on JRyanY with PID 13304 (D:\commit\target\classes started by Administrator in D:\commit)
+2019-09-12 12:35:48.425  INFO 13304 --- [restartedMain] com.ryan.hello.HelloApplication          : No active profile set, falling back to default profiles: default
+2019-09-12 12:35:48.485  INFO 13304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-09-12 12:35:48.485  INFO 13304 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-09-12 12:35:49.646  INFO 13304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2019-09-12 12:35:49.656  INFO 13304 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-12 12:35:49.656  INFO 13304 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.19]
+2019-09-12 12:35:49.756  INFO 13304 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-12 12:35:49.756  INFO 13304 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1271 ms
+2019-09-12 12:35:50.256  INFO 13304 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-12 12:35:50.326  WARN 13304 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'LEGACYHTML5' is deprecated. Using Template Mode 'HTML' instead.
+2019-09-12 12:35:50.346  INFO 13304 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2019-09-12 12:35:50.396  INFO 13304 --- [restartedMain] o.f.c.internal.license.VersionPrinter    : Flyway Community Edition 5.2.4 by Boxfuse
+2019-09-12 12:35:50.396  INFO 13304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-09-12 12:35:50.476  INFO 13304 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-09-12 12:35:50.486  INFO 13304 --- [restartedMain] o.f.c.internal.database.DatabaseFactory  : Database: jdbc:h2:~/hello (H2 1.4)
+2019-09-12 12:35:50.496  WARN 13304 --- [restartedMain] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 1.4.199 is newer than this version of Flyway and support has not been tested.
+2019-09-12 12:35:50.546  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbValidate     : Successfully validated 14 migrations (execution time 00:00.025s)
+2019-09-12 12:35:50.556  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": 14
+2019-09-12 12:35:50.566  INFO 13304 --- [restartedMain] o.f.core.internal.command.DbMigrate      : Schema "PUBLIC" is up to date. No migration necessary.
+2019-09-12 12:35:50.586  INFO 13304 --- [restartedMain] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService 'taskScheduler'
+2019-09-12 12:35:50.696  INFO 13304 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-09-12 12:35:50.716  INFO 13304 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is start Thu Sep 12 12:35:50 CST 2019
+2019-09-12 12:35:50.736  INFO 13304 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2019-09-12 12:35:50.746  INFO 13304 --- [restartedMain] com.ryan.hello.HelloApplication          : Started HelloApplication in 2.671 seconds (JVM running for 3.382)
+2019-09-12 12:35:50.746  INFO 13304 --- [scheduling-1] com.ryan.hello.schedule.HotTagTasks      : The time is stop Thu Sep 12 12:35:50 CST 2019
+2019-09-12 12:35:53.771  INFO 13304 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-09-12 12:35:53.771  INFO 13304 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-09-12 12:35:53.776  INFO 13304 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms

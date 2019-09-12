@@ -51,7 +51,7 @@ public class QuestionService {
         QuestionQueryDTO questionQueryDTO = new QuestionQueryDTO();
         questionQueryDTO.setSearch(search);
 
-        if (StringUtils.isNoneBlank(search)) {
+        if (StringUtils.isNoneBlank(tag)) {
             tag = tag.replace("+", "").replace("*", "").replace("?", "");
             questionQueryDTO.setTag(tag);
         }

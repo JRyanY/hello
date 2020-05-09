@@ -11,13 +11,7 @@ import java.util.UUID;
 
 @Service
 public class AliyunProvider {
-    private static String endpoint = "http://oss-cn-beijing.aliyuncs.com";
-    private static String accessKeyId = "LTAInuH45wrxFaFy";//这里是你的授权KeyId
-    private static String accessKeySecret = "7S21lOxv9Y7b0mfXwfugbpc4AVQLsb";//这里是你的授权秘钥
-    private static String bucketName = "jryany";
-
-    private static String folder = "nmqgh/";
-    private static String key = "http://jryany.oss-cn-beijing.aliyuncs.com";
+   
 
 
 
